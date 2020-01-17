@@ -50,10 +50,5 @@ $(document).ready(
         $('i.last').addClass('active');
       }
     });
-
-
-
-
-
   }
 );
