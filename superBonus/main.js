@@ -53,14 +53,18 @@ $(document).ready(
   }
 );
 
+// creo la funzione che al click cambia l'immagine
 $('.nav i').click(function(){
+  // rimuovo la classe active dai tag i e l'aggiungo all'elemento selezionato
   $('.nav i').removeClass('active');
   $(this).addClass('active');
+  // conservo in una variabile l'indice della posizione dell'elemento selezionato
   var position = $(this).index();
   var images = $('.images > img');
+  // intercetto l'immagine corrispondente tramite la variabile-contatore position
   var imgreplace = $('.images > img').eq(position);
+  // rimuovo la classe active dai tag img e l'aggiungo all'elemento selezionato
   images.removeClass('active');
   imgreplace.addClass('active');
 
-  console.log(imgreplace);
 });
